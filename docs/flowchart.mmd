@@ -1,0 +1,23 @@
+flowchart TD
+A[Benchmark Dataset] --> B[Prompt Generator]
+B --> C[LLM Provider Layer]
+C --> D[Generated Code + Explanation]
+D --> E[SQLite Raw Storage]
+D --> F[Correctness]
+D --> G[Completeness]
+D --> H[Security]
+D --> I[Maintainability]
+D --> J[Explainability]
+D --> K[Usability]
+D --> L[Efficiency]
+F --> M[Scoring Engine]
+G --> M
+H --> M
+I --> M
+J --> M
+K --> M
+L --> M
+M --> E
+E --> N[Pandas Analysis]
+N --> O[Charts]
+N --> P[Streamlit Dashboard]

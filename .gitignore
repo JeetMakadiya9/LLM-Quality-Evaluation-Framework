@@ -1,0 +1,30 @@
+# Secrets and local configuration
+.env*
+!.env.example
+.streamlit/secrets.toml
+
+# Python environments, bytecode, and test/tool caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+
+# Local databases and generated experiment outputs
+*.db
+*.sqlite
+*.sqlite3
+results/figures/*
+results/tables/*
+!results/figures/.gitkeep
+!results/tables/.gitkeep
+data/sample/sample_results.csv
+
+# OS/editor temporary files
+.DS_Store
+Thumbs.db
+*.tmp
